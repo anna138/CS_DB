@@ -5,5 +5,5 @@ This project was part of my Databases class, where my partner and I designed a c
 
 PHP files contain Javascript for website as well. Most code would be in console.php, front.php. report.php. Website is: http://delphi.cs.csubak.edu/~apoon/ signin with sn:agent1@oxysquare.com pw: test123
 
-Our technical report attached in this file shows our design. Pases 1, 2, and 3 were done in partners. Phase 4 and 5 were done 
+Our technical report attached in this file shows our design. Phases 1, 2, and 3 were done in partners. Phase 4 and 5 were done 
 individually.
