@@ -1,0 +1,276 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #F09819; /* fallback for old browsers */
+	background: -webkit-radial-gradient(#00d2ff, #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+	background: radial-gradient(#00d2ff, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 940px;
+	margin: 0;
+	transition: background-color .5s;
+	overflow: hidden
+}
+/*
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a, .dropdown-btn  {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+	border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+/* B- Collapsible for Chat*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: auto;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  position: absolute; 
+  top:20%; 
+  right:25%;
+}
+/* E - Collapsible for Chat */
+
+/* B - Chat Window */
+#chatwindow {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 20px;
+}
+.messages_display {
+    height: 300px;
+    overflow: auto;
+
+}
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+.form-container textarea {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f1f1f1;
+  width:inherit;
+  height:inherit;
+  
+}
+
+.fab > i {
+  font-size: 2em;
+  line-height: 55px;
+  -webkit-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* E - Chat Window */
+
+/* B - Search Bar */
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/xsearchicon.png');
+	background-size: 22px 22px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	margin-right: 5px;
+	
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+
+/*E - Search Bar*/
+
+/*B - Agent Console */
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+/*E - Agent Console */
+
+/*B - Hover Button */
+#mySydenav a {
+	text-align: right;
+    position: absolute;
+    right: -120px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+#mySydenav a:hover {
+    right: -10px;
+}
+
+#about {
+    top: 70px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 130px;
+    background-color: #2196F3;
+}
+
+#solutions {
+    top: 150px;
+    background-color: #D3D3D3;
+}
+
+#chats {
+    top: 100px;
+    background-color: #555
+}
+/*E - Hover Button */
+
+/* Media Screen for All */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
